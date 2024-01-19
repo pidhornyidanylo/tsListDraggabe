@@ -1,0 +1,38 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: whitesmoke;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+#root {
+  width: 100%;
+}
+
+/* animation duration and fill mode */
+.cssanimation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  /* display: inline-block; */
+}
+
+/* coolVerticalShake animation declaration & iteration counting */
+.coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
+
+/* coolVerticalShake animation keyframes */
+@keyframes coolVerticalShake {
+    3%, 21%, 39%, 57%, 74%, 92% { transform: translateX(2px) }
+    6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(1px) }
+    9%, 27%, 45%, 63%, 80%, 98% { transform: translateX(-1px) }
+}
